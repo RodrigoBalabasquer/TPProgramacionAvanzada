@@ -4,7 +4,7 @@ import Anotaciones.*;
 @Tabla(getNombreTabla = "alumnos")
 public class Alumno {
 	
-	@Id
+	@Id 
 	@Columna(getNombreColumna = "idalumno")
 	public Long idalumno;
 	

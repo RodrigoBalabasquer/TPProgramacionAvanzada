@@ -17,14 +17,15 @@ public class Program {
 		
 		Consulta cons = new Consulta();
 		Alumno al = new Alumno();
-		al.apellido = "qweqwe";
-		al.idalumno = 5L;//Tipo long
+		//al.idalumno = 5L;
+		al.apellido = "jolk,asd";
 		al.sexo = 2;
 		al.edad = 200;
 		al.nombre = "cosme";
 		
 		try {
-			cons.guardar(al);
+			//System.out.println(cons.guardar(al));//(Alumno.class, al);
+			System.out.println(cons.obtenerPorId(Alumno.class,11));
 		}
 		catch(Exception ex){
 			System.out.println(ex.getMessage()); 

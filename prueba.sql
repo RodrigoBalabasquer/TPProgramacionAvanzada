@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-06-2019 a las 00:06:40
+-- Tiempo de generación: 19-06-2019 a las 01:03:36
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -29,7 +29,7 @@ USE `prueba`;
 --
 
 CREATE TABLE `alumnos` (
-  `idalumno` int(11) NOT NULL,
+  `idalumno` bigint(11) NOT NULL,
   `nombre` varchar(100) NOT NULL,
   `apellido` varchar(100) NOT NULL,
   `edad` int(11) DEFAULT NULL,
@@ -41,7 +41,12 @@ CREATE TABLE `alumnos` (
 --
 
 INSERT INTO `alumnos` (`idalumno`, `nombre`, `apellido`, `edad`, `idsexo`) VALUES
-(5, 'pepe', 'pepe', 1, 1);
+(5, 'pepe', 'fulanito', 1, 1),
+(6, 'cosme', 'qweqwe', 200, 2),
+(8, 'cosme', 'jolk,asd', 200, 2),
+(9, 'cosme', 'jolk,asd', 200, 2),
+(10, 'cosme', 'jolk,asd', 200, 2),
+(11, 'cosme', 'jolk,asd', 200, 2);
 
 -- --------------------------------------------------------
 
@@ -86,7 +91,7 @@ ALTER TABLE `sexos`
 -- AUTO_INCREMENT de la tabla `alumnos`
 --
 ALTER TABLE `alumnos`
-  MODIFY `idalumno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idalumno` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `sexos`
 --

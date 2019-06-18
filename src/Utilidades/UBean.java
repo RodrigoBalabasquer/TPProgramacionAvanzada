@@ -23,14 +23,11 @@ public class UBean {
 	}
 	public static void ejecutarSet(Object o, String att, Object valor) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException{
 		Class c = o.getClass();
-		System.out.println(c.getName());
+		
 		Object[] obj = new Object[1];
 		obj[0] = valor;
 		Method[] methods = c.getDeclaredMethods();
 		String metodo = "set" + att.substring(0, 1).toUpperCase() + att.substring(1).toLowerCase();  
-		System.out.println(metodo);
-		System.out.println(att);
-		System.out.println(valor);
 		
 		for(Method method: methods){
 			if(method.getName().equals(metodo)){
